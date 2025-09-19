@@ -1,0 +1,78 @@
+/* Stili Generali */
+body {
+    font-family: 'Roboto', sans-serif; /* Usa il font Roboto, altrimenti un font generico */
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5; /* Sfondo grigio chiaro */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Assicura che il contenuto sia centrato verticalmente */
+}
+
+/* Stili per il Contenitore Principale */
+.container {
+    background-color: #ffffff; /* Sfondo bianco per il contenitore */
+    padding: 40px;
+    border-radius: 10px; /* Bordi arrotondati */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+    text-align: center;
+    max-width: 600px; /* Larghezza massima del contenitore */
+    width: 90%; /* Occupa il 90% della larghezza su schermi più piccoli */
+}
+
+/* Stili per il Titolo */
+h1 {
+    color: #2c3e50; /* Blu scuro */
+    margin-bottom: 20px;
+    font-size: 2.2em; /* Dimensione del titolo */
+}
+
+/* Stili per i Paragrafi */
+p {
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+
+/* Stili per il Pulsante di Download */
+.download-button {
+    display: inline-block; /* Permette di applicare padding e margine come un blocco */
+    background-color: #3498db; /* Blu vibrante */
+    color: white; /* Testo bianco */
+    padding: 15px 30px;
+    text-decoration: none; /* Rimuove la sottolineatura del link */
+    border-radius: 8px; /* Bordi leggermente arrotondati */
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease; /* Transizione fluida al passaggio del mouse */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombra per dare profondità */
+}
+
+.download-button:hover {
+    background-color: #2980b9; /* Colore più scuro al passaggio del mouse */
+    transform: translateY(-2px); /* Leggero sollevamento */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombra più pronunciata */
+}
+
+/* Stili per la Nota Inferiore */
+.nota {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 30px;
+}
+
+/* Media Queries per schermi più piccoli (opzionale ma consigliato) */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    .download-button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}
